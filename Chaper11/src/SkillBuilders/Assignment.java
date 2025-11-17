@@ -53,6 +53,8 @@ public class Assignment {
 
     private void loadInstructions() {
         String filePath = filePathField.getText().trim();
+        filePath = "C:\\Users\\38327014\\git\\CS30P3\\Chaper11\\src\\SkillBuilders\\" + filePath;
+        System.out.print(filePath);       
         if (filePath.isEmpty()) {
             filePath = "assignment.txt";
         }
