@@ -1,0 +1,6 @@
+Name: 11, Grade Level: 1, Semester: 1, Grades: 1.0, 1.0, 11.0, 1.0, Average: 3.5%
+Name: 323, Grade Level: 232, Semester: 323, Grades: 23.0, 23.0, 334.0, 5543.0, Average: 1480.8%
+Name: 11111111, Grade Level: 11111, Semester: 1111111, Grades: 1111.0, 111.0, 1111.0, 1111.0, Average: 861.0%
+Name: 1, Grade Level: 1, Semester: 2, Grades: 21.0, 2.0, 121.0, 21.0, Average: 41.3%
+Name: Rasheed, Grade Level: 12, Semester: 2, Grades: 34.0, 67.0, 87.0, 67.0, Average: 63.8%
+Name: 1, Grade Level: 1, Semester: 1, Grades: 1.0, 1.0, 1.0, 1.0, Average: 1.0%
