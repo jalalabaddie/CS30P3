@@ -181,30 +181,34 @@ public class StudentSemesterAverage {
        });
    }
    private void saveData() {
-       String name = nameField.getText().trim();
+     
+	   String name = nameField.getText().trim();
        String gradeLevel = gradeLevelField.getText().trim();
        String semester = semesterField.getText().trim();
        String grade1Text = grade1Field.getText().trim();
        String grade2Text = grade2Field.getText().trim();
        String grade3Text = grade3Field.getText().trim();
        String grade4Text = grade4Field.getText().trim();
+      
        if (name.isEmpty() || gradeLevel.isEmpty() || semester.isEmpty()
-               || grade1Text.isEmpty() || grade2Text.isEmpty()
+              
+    		   || grade1Text.isEmpty() || grade2Text.isEmpty()
                || grade3Text.isEmpty() || grade4Text.isEmpty()) {
-           JOptionPane.showMessageDialog(
+           
+    	   JOptionPane.showMessageDialog(
                frame,
                "Please fill in all fields!",
                "Error",
                JOptionPane.ERROR_MESSAGE);
-           return;
+          
        }
        try {
-           double g1 = Double.parseDouble(grade1Text);
-           double g2 = Double.parseDouble(grade2Text);
-           double g3 = Double.parseDouble(grade3Text);
-           double g4 = Double.parseDouble(grade4Text);
+           double gr1 = Double.parseDouble(grade1Text);
+           double gr2 = Double.parseDouble(grade2Text);
+           double gr3 = Double.parseDouble(grade3Text);
+           double gr4 = Double.parseDouble(grade4Text);
          
-           double average = (g1 + g2 + g3 + g4) / 4.0;
+           double average = (gr1 + gr2 + gr3 + gr4) / 4.0;
          
            String averageString = String.format("%.1f%%", average);
           
@@ -213,7 +217,7 @@ public class StudentSemesterAverage {
            String line = "Name: " + name
                    + ", Grade Level: " + gradeLevel
                    + ", Semester: " + semester
-                   + ", Grades: " + g1 + ", " + g2 + ", " + g3 + ", " + g4
+                   + ", Grades: " + gr1 + ", " + gr2 + ", " + gr3 + ", " + gr4
                    + ", Average: " + averageString;
            BufferedWriter writer =
                new BufferedWriter(new FileWriter(DATA_FILE_NAME, true));
